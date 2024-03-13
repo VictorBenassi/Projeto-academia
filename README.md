@@ -2,9 +2,9 @@
 
 ## Tarefas
 
-- [ ] Header
+- [X] Header
     - [X] HTML
-    - [ ] CSS
+    - [X] CSS
 - [ ] Apresentação
 - [ ] Projetos
 - [ ] Conhecimentos
