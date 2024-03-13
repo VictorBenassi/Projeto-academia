@@ -9,4 +9,3 @@
 - [ ] Projetos
 - [ ] Conhecimentos
 - [ ] Orçamento
-- teste

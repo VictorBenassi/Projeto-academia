@@ -17,10 +17,13 @@
     list-style: none;
 }
 
-header
+header 
 {
     height: 100vh;
+    display: flex;
+    justify-content: center;
 }
+
 
 header::before
 {
@@ -58,13 +61,14 @@ ul
 #secao-apresentacao
 {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     padding: 4rem;
     background-color: var(--color-cinza_azulado);
 }
 #secao-apresentacao img 
 {
     border-radius: 50%;
+    margin-right: 80px;
 }
 #texto-apresentacao
 {
