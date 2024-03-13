@@ -6,8 +6,15 @@
     --color-preto: #1d1d1d;
     --color-branco: #ececec;
     --color-cinza: #A1A1A1;
+    --color-cinza_azulado:#272935;
     --font-title: "Montserrat", sans-serif;
     --font-body: "Poppins", sans-serif;
+}
+
+*
+{
+    margin: 0;
+    list-style: none;
 }
 
 header
@@ -53,6 +60,7 @@ ul
     display: flex;
     align-items: center;
     padding: 4rem;
+    background-color: var(--color-cinza_azulado);
 }
 #secao-apresentacao img 
 {
@@ -64,11 +72,63 @@ ul
 }
 #texto-apresentacao h2
 {
+    color: var(--color-dourado);
     font-size: 2.5rem;
     font-family: var(--font-title);
 }
 #texto-apresentacao p
 {
+    color: var(--color-dourado);
     font-size: 1.5rem;
     font-family: var(--font-body);
+}
+#secao-projetos
+{
+    background-color: #272935;
+    height: 100vh;
+}
+
+#secao-projetos ul
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.card
+{
+    max-width: 300px;
+    height: 420px;
+    position: relative;
+    transition: opacity .5s;
+}
+.image-wrapper
+{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+.image-wrapper img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.card-text
+{
+    position: absolute;
+    top: 30%;
+    opacity: 0;
+    transition: opacity .5s, top .5s;
+    color: var(--color-dourado)
+}
+.card:hover .card-text
+{
+    opacity: 1;
+    top: 15%;
+    color: var(--color-dourado)
+}
+.card:hover .image-wrapper
+{
+    opacity: .3;
 }
