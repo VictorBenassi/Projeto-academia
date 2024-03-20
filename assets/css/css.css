@@ -148,6 +148,7 @@ ul
 #secao-orcamento form
 {
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(2,1fr);
     flex-direction: column;
     max-width: 500px;
@@ -161,4 +162,10 @@ ul
 .linha
 {
     grid-column: 1 / 3;
+}
+input[type=radio],
+input[type=checkbox],
+input[type=range]
+{
+    accent-color: var(--color-dourado);
 }
