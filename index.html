@@ -63,6 +63,39 @@
             </li>
         </ul>
     </section>
+    <section id="secao-orcamento">
+        <h2>Faça seu Plano</h2>
+        <form action="">
+            <div class="campo linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+            </div>
+
+            <label for="tipo-plano">Planos</label>
+            <select id="tipo-plano" id="tipo-plano">
+                <option value="1">Day pass</option>
+                <option value="2">Mensal</option>
+                <option value="3">Fidelidade 3 meses</option>
+                <option value="4">Fidelidade 12 meses</option>
+            </select>
+            <label for="">precisa de personal</label>
+            <input type="radio" name="prototipo" id="personal_sim">
+            <label for="personal_sim">Sim</label>
+            <input type="radio"name="prototipo" id="personal_nao">
+            <label for="personal_nao">Nao</label>
+
+            <input type="checkbox" id="bebedouro-plus">
+            <label for="bebedouro-plus">acesso ao bebedouro plus?</label>
+            <!--exemplo do slider-->
+            <label for="prazo">Prazo</label>
+            <input type="range" name="prazo" min="1" max="12">
+            <button>Enviar</button>
+        </form>
+    </section>
 
 </body>
 </html>

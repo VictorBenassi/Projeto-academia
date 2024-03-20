@@ -136,3 +136,29 @@ ul
 {
     opacity: .3;
 }
+#secao-orcamento
+{
+    height: 100vh;
+    padding: 3rem;
+}
+#secao-orcamento h2
+{
+    font-family: var(--font-title);
+}
+#secao-orcamento form
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.campo
+{
+    display: flex;
+    flex-direction: column;
+}
+.linha
+{
+    grid-column: 1 / 3;
+}
